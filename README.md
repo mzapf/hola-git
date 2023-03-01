@@ -34,15 +34,15 @@ También es preferible que tengas algunos conocimientos básicos de la terminal,
 Ten en cuenta que los enlaces a continuación te llevan a recursos en sitios externos. Eventualmente intentaremos tener nuestro propio curso Git/GitHub dedicado, pero por ahora, esto te ayudará a familiarizarte con el tema en cuestión.
 
 - [Hola mundo (de GitHub)](https://guides.github.com/activities/hello-world/)
-  - : Este es un buen lugar para comenzar: esta guía práctica te permite comenzar a usar GitHub, aprender los conceptos básicos de Git, como crear repositorios y ramas, realizar confirmaciones, abrir y fusionar solicitudes de extracción.
+  - Este es un buen lugar para comenzar: esta guía práctica te permite comenzar a usar GitHub, aprender los conceptos básicos de Git, como crear repositorios y ramas, realizar confirmaciones, abrir y fusionar solicitudes de extracción.
 - [Manual de Git (en GitHub)](https://guides.github.com/introduction/git-handbook/)
-  - : Este Manual de Git profundiza un poco más, explicando qué es un VCS, qué es un repositorio, cómo funciona el modelo básico de GitHub, comandos y ejemplos de Git, y más.
+  - Este Manual de Git profundiza un poco más, explicando qué es un VCS, qué es un repositorio, cómo funciona el modelo básico de GitHub, comandos y ejemplos de Git, y más.
 - [Bifurcación de proyectos (de GitHub)](https://guides.github.com/activities/forking/)
-  - : Bifurcar proyectos es esencial cuando deseas contribuir al código de otra persona. Esta guía explica cómo.
+  - Bifurcar proyectos es esencial cuando deseas contribuir al código de otra persona. Esta guía explica cómo.
 - [Acerca de las solicitudes de extracción (de GitHub)](https://help.github.com/en/articles/about-pull-requests)
-  - : Una útil guía para administrar las solicitudes de extracción, la forma en que los cambios de código sugeridos se entregan a los repositorios de las personas para su consideración.
+  - Una útil guía para administrar las solicitudes de extracción, la forma en que los cambios de código sugeridos se entregan a los repositorios de las personas para su consideración.
 - [Dominando las incidencias (de GitHub)](https://guides.github.com/features/issues/)
-  - : Las incidencias son como un foro para tu proyecto GitHub, donde las personas pueden hacer preguntas e informar problemas, y tú puede administrar las actualizaciones (por ejemplo, asignar personas para solucionar problemas, aclarar el problema, informar a las personas que las cosas están solucionadas). Este artículo te brinda lo que necesitas saber sobre las incidencias.
+  - Las incidencias son como un foro para tu proyecto GitHub, donde las personas pueden hacer preguntas e informar problemas, y tú puede administrar las actualizaciones (por ejemplo, asignar personas para solucionar problemas, aclarar el problema, informar a las personas que las cosas están solucionadas). Este artículo te brinda lo que necesitas saber sobre las incidencias.
 
 > **Nota:** Hay **mucho más** que puedes hacer con Git y GitHub, pero creemos que lo anterior representa lo mínimo que necesitas saber para comenzar a usar Git de manera efectiva. A medida que profundices en Git, comenzarás a darte cuenta de que es fácil equivocarse cuando comienzas a usar comandos más complicados. No te preocupes, incluso los desarrolladores web profesionales encuentran a Git confuso a veces, y a menudo resuelven problemas buscando soluciones en la web, o consultando sitios como [Reglas de vuelo para Git](https://github.com/k88hudson/git-flight-rules/blob/master/README_es.md) y [Dangit, ¡git!](https://dangitgit.com/es)
 
