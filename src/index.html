@@ -10,203 +10,232 @@
 </head>
 
 <body>
-    <h1>Git y GitHub</h1>
-    <p>Todos los desarrolladores utilizarán algún tipo de <strong>sistema de
-            control de versiones</strong> (<strong>VCS</strong>), una
-        herramienta que les permita colaborar con otros desarrolladores en un
-        proyecto sin peligro de que sobrescriban el trabajo de los demás, y
-        volver a las versiones anteriores de la base de código si existe un
-        problema descubierto más tarde. El VCS más popular (al menos entre los
-        desarrolladores web) es <strong>Git</strong>, junto con
-        <strong>GitHub</strong>, un sitio que proporciona alojamiento para tus
-        repositorios y varias herramientas para trabajar con ellos. Este módulo
-        tiene como objetivo enseñarte lo que necesitas saber sobre ambos.
-    </p>
-    <h2>Introducción</h2>
-    <p>Los VCS son esenciales para el desarrollo de software:</p>
-    <ul>
-        <li>Es raro que trabajes en un proyecto completamente por tu cuenta, y
-            tan pronto como comiences a trabajar con otras personas, comenzarás
-            a correr el riesgo de entrar en conflicto con el trabajo del otro,
-            es decir, cuando ambos intentan actualizar simultáneamente la misma
-            pieza de código. Debes tener algún tipo de mecanismo para
-            administrar las ocurrencias y, como resultado, evitar la pérdida de
-            trabajo.</li>
-        <li>Cuando trabajes en un proyecto por tu cuenta o con otros, querrás
-            poder hacer una copia de seguridad del código en un lugar central,
-            para que no se pierda si tu computadora se daña.</li>
-        <li>También querrás poder volver a versiones anteriores si más tarde
-            descubres un problema. Es posible que hayas empezado a hacer esto en
-            tu propio trabajo mediante la creación de diferentes versiones de un
-            mismo archivo, por ejemplo <code>myCode.js</code>,
-            <code>myCode_v2.js</code>, <code>myCode_v3.js</code>,
-            <code>myCode_final.js</code>,
-            <code>myCode_really_really_final.js</code>, etc, pero esto es muy
-            propenso a errores y poco fiable.
-        </li>
-        <li>Los diferentes miembros del equipo generalmente querrán crear sus
-            propias versiones separadas del código (llamadas
-            <strong>ramas</strong> en Git), trabajar en una nueva característica
-            en esa versión y luego fusionarla de manera controlada (en GitHub
-            usamos <strong>solicitudes de extracción</strong>) con la versión
-            maestra cuando hayan terminado con ella.
-        </li>
-    </ul>
-    <p>Los VCS proporcionan herramientas para satisfacer las necesidades
-        anteriores. <a href="https://git-scm.com/" target="_blank">Git</a> es un
-        ejemplo de VCS, y <a href="https://github.com/"
-            target="_blank">GitHub</a> es un sitio web + infraestructura que
-        proporciona un servidor Git más una serie de herramientas realmente
-        útiles para trabajar con repositorios git individuales o en equipo, como
-        informar problemas con el código, herramientas de revisión,
-        características de administración de proyectos tal como asignación de
-        tareas, estados de tareas, y más.</p>
-    <p><strong>Nota:</strong> Git en realidad es un sistema de control de
-        versiones <em>distribuido</em>, lo cual significa que se realiza una
-        copia completa del repositorio que contiene la base de código en tu
-        computadora (y en la de todos los demás). Realizas cambios en tu propia
-        copia, y luego empujas esos cambios nuevamente al servidor, donde un
-        administrador decidirá si fusiona tus cambios con la copia maestra.</p>
-    <h2>Prerequisitos</h2>
-    <p>Para usar Git y GitHub, necesitas:</p>
-    <ul>
-        <li>Una computadora de escritorio con Git instalado (consulta la <a
-                href="https://git-scm.com/downloads" target="_blank">página de
-                descargas de Git</a>).</li>
-        <li>Una herramienta para usar Git. Dependiendo de cómo te guste
-            trabajar, puedes usar un <a
-                href="https://git-scm.com/downloads/guis/"
-                target="_blank">cliente Git con GUI</a> (te recomendamos GitHub
-            Desktop, SourceTree o Git Kraken) o simplemente usar una ventana de
-            la terminal. De hecho, probablemente sea útil que conozcas al menos
-            los conceptos básicos de los comandos de la terminal git, incluso si
-            tienes la intención de usar una GUI.</li>
-        <li>Una <a href="https://github.com/join" target="_blank">cuenta de
-                GitHub</a>. Si aún no tienes una, regístrate ahora usando el
-            enlace provisto.</li>
-    </ul>
-    <p>En términos de conocimiento previo, no necesitas saber nada sobre
-        desarrollo web, Git/GitHub o VCS para iniciar este módulo. Sin embargo,
-        se recomienda que conozcas algo de codificación para que tengas
-        conocimientos informáticos razonables y algún código para almacenar en
-        tus repositorios.</p>
-    <p>También es preferible que tengas algunos conocimientos básicos de la
-        terminal, por ejemplo, moverte entre directorios, crear archivos y
-        modificar la variable del sistema <code>PATH</code>.</p>
-    <p><strong>Nota:</strong> Github no es el único sitio/conjunto de
-        herramientas que puedes usar con Git. Hay otras alternativas, como <a
-            href="https://about.gitlab.com/" target="_blank">GitLab,</a> que
-        podrías probar, y también podrías intentar configurar tu propio servidor
-        Git y usarlo en lugar de GitHub. Solo nos hemos quedado con GitHub en
-        este curso para proporcionar una forma única que funciona.</p>
-    <h2>Guías</h2>
-    <p>Ten en cuenta que los enlaces a continuación te llevan a recursos en
-        sitios externos. Eventualmente intentaremos tener nuestro propio curso
-        Git/GitHub dedicado, pero por ahora, esto te ayudará a familiarizarte
-        con el tema en cuestión.</p>
-    <ul>
-        <li><a href="https://guides.github.com/activities/hello-world/"
-                target="_blank">Hola mundo (de GitHub)</a></li>
+    <header>
+        <h1>Git y GitHub</h1>
+        <p>Todos los desarrolladores utilizarán algún tipo de <strong>sistema de
+                control de versiones</strong> (<strong>VCS</strong>), una
+            herramienta que les permita colaborar con otros desarrolladores en
+            un proyecto sin peligro de que sobrescriban el trabajo de los demás,
+            y volver a las versiones anteriores de la base de código si existe
+            un problema descubierto más tarde. El VCS más popular (al menos
+            entre los desarrolladores web) es <strong>Git</strong>, junto con
+            <strong>GitHub</strong>, un sitio que proporciona alojamiento para
+            tus repositorios y varias herramientas para trabajar con ellos. Este
+            módulo tiene como objetivo enseñarte lo que necesitas saber sobre
+            ambos.
+        </p>
+    </header>
+    <main>
+        <h2>Introducción</h2>
+        <p>Los VCS son esenciales para el desarrollo de software:</p>
         <ul>
-            <li>
-                <p>Este es un buen lugar para comenzar: esta guía práctica te
-                    permite comenzar a usar GitHub, aprender los conceptos
-                    básicos
-                    de Git, como crear repositorios y ramas, realizar
-                    confirmaciones, abrir y fusionar solicitudes de extracción.
-                </p>
+            <li>Es raro que trabajes en un proyecto completamente por tu cuenta,
+                y tan pronto como comiences a trabajar con otras personas,
+                comenzarás a correr el riesgo de entrar en conflicto con el
+                trabajo del otro, es decir, cuando ambos intentan actualizar
+                simultáneamente la misma pieza de código. Debes tener algún tipo
+                de mecanismo para administrar las ocurrencias y, como resultado,
+                evitar la pérdida de trabajo.</li>
+            <li>Cuando trabajes en un proyecto por tu cuenta o con otros,
+                querrás poder hacer una copia de seguridad del código en un
+                lugar central, para que no se pierda si tu computadora se daña.
+            </li>
+            <li>También querrás poder volver a versiones anteriores si más tarde
+                descubres un problema. Es posible que hayas empezado a hacer
+                esto en tu propio trabajo mediante la creación de diferentes
+                versiones de un mismo archivo, por ejemplo
+                <code>myCode.js</code>, <code>myCode_v2.js</code>,
+                <code>myCode_v3.js</code>, <code>myCode_final.js</code>,
+                <code>myCode_really_really_final.js</code>, etc, pero esto es
+                muy propenso a errores y poco fiable.
+            </li>
+            <li>Los diferentes miembros del equipo generalmente querrán crear
+                sus propias versiones separadas del código (llamadas
+                <strong>ramas</strong> en Git), trabajar en una nueva
+                característica en esa versión y luego fusionarla de manera
+                controlada (en GitHub usamos <strong>solicitudes de
+                    extracción</strong>) con la versión maestra cuando hayan
+                terminado con ella.
             </li>
         </ul>
-        <li><a href="https://guides.github.com/introduction/git-handbook/"
-                target="_blank">Manual de Git (en GitHub)</a></li>
+        <p>Los VCS proporcionan herramientas para satisfacer las necesidades
+            anteriores. <a href="https://git-scm.com/" target="_blank"
+                rel="noopener noreferrer">Git</a> es un ejemplo de VCS, y <a
+                href="https://github.com/" target="_blank"
+                rel="noopener noreferrer">GitHub</a> es un sitio web +
+            infraestructura que proporciona un servidor Git más una serie de
+            herramientas realmente útiles para trabajar con repositorios git
+            individuales o en equipo, como informar problemas con el código,
+            herramientas de revisión, características de administración de
+            proyectos tal como asignación de tareas, estados de tareas, y más.
+        </p>
+        <p><strong>Nota:</strong> Git en realidad es un sistema de control de
+            versiones <em>distribuido</em>, lo cual significa que se realiza una
+            copia completa del repositorio que contiene la base de código en tu
+            computadora (y en la de todos los demás). Realizas cambios en tu
+            propia copia, y luego empujas esos cambios nuevamente al servidor,
+            donde un administrador decidirá si fusiona tus cambios con la copia
+            maestra. </p>
+        <h2>Prerequisitos</h2>
+        <p>Para usar Git y GitHub, necesitas:</p>
         <ul>
-            <li>
-                <p>Este Manual de Git profundiza un poco más, explicando qué es
-                    un
-                    VCS, qué es un repositorio, cómo funciona el modelo básico
-                    de
-                    GitHub, comandos y ejemplos de Git, y más.</p>
+            <li>Una computadora de escritorio con Git instalado (consulta la <a
+                    href="https://git-scm.com/downloads" target="_blank"
+                    rel="noopener noreferrer">página de descargas de Git</a>).
             </li>
+            <li>Una herramienta para usar Git. Dependiendo de cómo te guste
+                trabajar, puedes usar un <a
+                    href="https://git-scm.com/downloads/guis/" target="_blank"
+                    rel="noopener noreferrer">cliente Git con GUI</a> (te
+                recomendamos GitHub Desktop, SourceTree o Git Kraken) o
+                simplemente usar una ventana de la terminal. De hecho,
+                probablemente sea útil que conozcas al menos los conceptos
+                básicos de los comandos de la terminal git, incluso si tienes la
+                intención de usar una GUI. </li>
+            <li>Una <a href="https://github.com/join" target="_blank"
+                    rel="noopener noreferrer">cuenta de GitHub</a>. Si aún no
+                tienes una, regístrate ahora usando el enlace provisto.</li>
         </ul>
-        <li><a href="https://guides.github.com/activities/forking/"
-                target="_blank">Bifurcación de proyectos (de GitHub)</a></li>
+        <p>En términos de conocimiento previo, no necesitas saber nada sobre
+            desarrollo web, Git/GitHub o VCS para iniciar este módulo. Sin
+            embargo, se recomienda que conozcas algo de codificación para que
+            tengas conocimientos informáticos razonables y algún código para
+            almacenar en tus repositorios.</p>
+        <p>También es preferible que tengas algunos conocimientos básicos de la
+            terminal, por ejemplo, moverte entre directorios, crear archivos y
+            modificar la variable del sistema <code>PATH</code>.</p>
+        <p><strong>Nota:</strong> Github no es el único sitio/conjunto de
+            herramientas que puedes usar con Git. Hay otras alternativas, como
+            <a href="https://about.gitlab.com/" target="_blank"
+                rel="noopener noreferrer">GitLab,</a> que podrías probar, y
+            también podrías intentar configurar tu propio servidor Git y usarlo
+            en lugar de GitHub. Solo nos hemos quedado con GitHub en este curso
+            para proporcionar una forma única que funciona.
+        </p>
+        <h2>Guías</h2>
+        <p>Ten en cuenta que los enlaces a continuación te llevan a recursos en
+            sitios externos. Eventualmente intentaremos tener nuestro propio
+            curso Git/GitHub dedicado, pero por ahora, esto te ayudará a
+            familiarizarte con el tema en cuestión.</p>
         <ul>
-            <li>
-                <p>Bifurcar proyectos es esencial cuando deseas contribuir al
-                    código
-                    de otra persona. Esta guía explica cómo.</p>
-            </li>
+            <li><a href="https://guides.github.com/activities/hello-world/"
+                    target="_blank" rel="noopener noreferrer">Hola mundo (de
+                    GitHub)</a></li>
+            <ul>
+                <li>
+                    <p>Este es un buen lugar para comenzar: esta guía práctica
+                        te permite comenzar a usar GitHub, aprender los
+                        conceptos básicos de Git, como crear repositorios y
+                        ramas, realizar confirmaciones, abrir y fusionar
+                        solicitudes de extracción. </p>
+                </li>
+            </ul>
+            <li><a href="https://guides.github.com/introduction/git-handbook/"
+                    target="_blank" rel="noopener noreferrer">Manual de Git (en
+                    GitHub)</a></li>
+            <ul>
+                <li>
+                    <p>Este Manual de Git profundiza un poco más, explicando qué
+                        es un VCS, qué es un repositorio, cómo funciona el
+                        modelo básico de GitHub, comandos y ejemplos de Git, y
+                        más.</p>
+                </li>
+            </ul>
+            <li><a href="https://guides.github.com/activities/forking/"
+                    target="_blank" rel="noopener noreferrer">Bifurcación de
+                    proyectos (de GitHub)</a></li>
+            <ul>
+                <li>
+                    <p>Bifurcar proyectos es esencial cuando deseas contribuir
+                        al código de otra persona. Esta guía explica cómo.</p>
+                </li>
+            </ul>
+            <li><a href="https://help.github.com/en/articles/about-pull-requests"
+                    target="_blank" rel="noopener noreferrer">Acerca de las
+                    solicitudes de extracción (de GitHub)</a></li>
+            <ul>
+                <li>
+                    <p>Una útil guía para administrar las solicitudes de
+                        extracción, la forma en que los cambios de código
+                        sugeridos se entregan a los repositorios de las personas
+                        para su consideración.</p>
+                </li>
+            </ul>
+            <li><a href="https://guides.github.com/features/issues/"
+                    target="_blank" rel="noopener noreferrer">Dominando las
+                    incidencias (de GitHub)</a></li>
+            <ul>
+                <li>
+                    <p>Las incidencias son como un foro para tu proyecto GitHub,
+                        donde las personas pueden hacer preguntas e informar
+                        problemas, y tú puede administrar las actualizaciones
+                        (por ejemplo, asignar personas para solucionar
+                        problemas, aclarar el problema, informar a las personas
+                        que las cosas están solucionadas). Este artículo te
+                        brinda lo que necesitas saber sobre las incidencias.
+                    </p>
+                </li>
+            </ul>
         </ul>
-        <li><a href="https://help.github.com/en/articles/about-pull-requests"
-                target="_blank">Acerca de las solicitudes de extracción (de
-                GitHub)</a></li>
+        <p><strong>Nota:</strong> Hay <strong>mucho más</strong> que puedes
+            hacer con Git y GitHub, pero creemos que lo anterior representa lo
+            mínimo que necesitas saber para comenzar a usar Git de manera
+            efectiva. A medida que profundices en Git, comenzarás a darte cuenta
+            de que es fácil equivocarse cuando comienzas a usar comandos más
+            complicados. No te preocupes, incluso los desarrolladores web
+            profesionales encuentran a Git confuso a veces, y a menudo resuelven
+            problemas buscando soluciones en la web, o consultando sitios como
+            <a href="https://github.com/k88hudson/git-flight-rules/blob/master/README_es.md"
+                target="_blank" rel="noopener noreferrer">Reglas de vuelo para
+                Git</a> y <a href="https://dangitgit.com/es" target="_blank"
+                rel="noopener noreferrer">Dangit, ¡git!</a>
+        </p>
+        <h2>Ve también</h2>
         <ul>
-            <li>
-                <p>Una útil guía para administrar las solicitudes de extracción,
-                    la
-                    forma en que los cambios de código sugeridos se entregan a
-                    los
-                    repositorios de las personas para su consideración.</p>
+            <li><a href="https://guides.github.com/introduction/flow/"
+                    target="_blank" rel="noopener noreferrer">Comprender el
+                    flujo de GitHub</a></li>
+            <li><a href="https://git-scm.com/docs" target="_blank"
+                    rel="noopener noreferrer">Lista de comandos de Git</a></li>
+            <li><a href="https://guides.github.com/features/mastering-markdown/"
+                    target="_blank" rel="noopener noreferrer">Reducción de
+                    dominio</a> (el formato de texto en el que escribe en
+                relaciones públicas, comentarios de insidencias y archivos
+                <code>.md</code>).
             </li>
+            <li><a href="https://guides.github.com/features/pages/"
+                    target="_blank" rel="noopener noreferrer">Introducción a las
+                    páginas de GitHub</a> (cómo publicar demostraciones y sitios
+                web en GitHub). </li>
+            <li><a href="https://learngitbranching.js.org/" target="_blank"
+                    rel="noopener noreferrer">Aprende la ramificación de Git</a>
+            </li>
+            <li><a href="https://github.com/k88hudson/git-flight-rules"
+                    target="_blank" rel="noopener noreferrer">Reglas de vuelo
+                    para Git</a> (un compendio muy útil de formas de lograr
+                cosas específicas en Git, incluida la forma de corregir las
+                cosas cuando te equivocaste).</li>
+            <li><a href="https://dangitgit.com/" target="_blank"
+                    rel="noopener noreferrer">Dangit, git!</a> (otro compendio
+                útil, específicamente de formas de corregir las cosas cuando te
+                equivocaste).</li>
         </ul>
-        <li><a href="https://guides.github.com/features/issues/"
-                target="_blank">Dominando las incidencias (de GitHub)</a></li>
+        <h2>Fuente</h2>
         <ul>
-            <li>
-                <p>Las incidencias son como un foro para tu proyecto GitHub,
-                    donde
-                    las personas pueden hacer preguntas e informar problemas, y
-                    tú
-                    puede administrar las actualizaciones (por ejemplo, asignar
-                    personas para solucionar problemas, aclarar el problema,
-                    informar a las personas que las cosas están solucionadas).
-                    Este
-                    artículo te brinda lo que necesitas saber sobre las
-                    incidencias.
-                </p>
-            </li>
+            <li><a href="https://developer.mozilla.org/es/docs/Learn/Tools_and_testing/GitHub"
+                    target="_blank" rel="noopener noreferrer">Git y GitHub</a> -
+                MDN Web Docs</li>
         </ul>
-    </ul>
-    <p><strong>Nota:</strong> Hay <strong>mucho más</strong> que puedes hacer
-        con Git y GitHub, pero creemos que lo anterior representa lo mínimo que
-        necesitas saber para comenzar a usar Git de manera efectiva. A medida
-        que profundices en Git, comenzarás a darte cuenta de que es fácil
-        equivocarse cuando comienzas a usar comandos más complicados. No te
-        preocupes, incluso los desarrolladores web profesionales encuentran a
-        Git confuso a veces, y a menudo resuelven problemas buscando soluciones
-        en la web, o consultando sitios como <a
-            href="https://github.com/k88hudson/git-flight-rules/blob/master/README_es.md"
-            target="_blank">Reglas de vuelo para Git</a> y <a
-            href="https://dangitgit.com/es" target="_blank">Dangit, ¡git!</a>
-    </p>
-    <h2>Ve también</h2>
-    <ul>
-        <li><a href="https://guides.github.com/introduction/flow/"
-                target="_blank">Comprender el flujo de GitHub</a></li>
-        <li><a href="https://git-scm.com/docs" target="_blank">Lista de comandos
-                de Git</a></li>
-        <li><a href="https://guides.github.com/features/mastering-markdown/"
-                target="_blank">Reducción de dominio</a> (el formato de texto en
-            el que escribe en relaciones públicas, comentarios de insidencias y
-            archivos <code>.md</code>). </li>
-        <li><a href="https://guides.github.com/features/pages/"
-                target="_blank">Introducción a las páginas de GitHub</a> (cómo
-            publicar demostraciones y sitios web en GitHub). </li>
-        <li><a href="https://learngitbranching.js.org/" target="_blank">Aprende
-                la ramificación de Git</a></li>
-        <li><a href="https://github.com/k88hudson/git-flight-rules"
-                target="_blank">Reglas de vuelo para Git</a> (un compendio muy
-            útil de formas de lograr cosas específicas en Git, incluida la forma
-            de corregir las cosas cuando te equivocaste).</li>
-        <li><a href="https://dangitgit.com/" target="_blank">Dangit, git!</a>
-            (otro compendio útil, específicamente de formas de corregir las
-            cosas cuando te equivocaste).</li>
-    </ul>
-    <h2>Fuente</h2>
-    <ul>
-        <li><a href="https://developer.mozilla.org/es/docs/Learn/Tools_and_testing/GitHub"
-                target="_blank">Git y GitHub</a> - MDN Web Docs</li>
-    </ul>
+        <h2>Sobre ésta página</h2>
+        <ul>
+            <li><a href="https://github.com/mzapf/hola-git" target="_blank"
+                    rel="noopener noreferrer">Puedes ver el código fuente en
+                    GitHub.</a></li>
+        </ul>
+    </main>
+    <footer>
+        <p>Sitio web desarrollado por Matias Zapf</p>
+    </footer>
 </body>
 
 </html>

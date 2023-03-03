@@ -8,11 +8,6 @@
     margin: 0;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -50,8 +45,23 @@ h6 {
 }
 
 body,
-p,
-h1,
-h2 {
-    padding: 0.5rem;
+header,
+main,
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+header {
+    margin: 1rem 1rem 0;
+}
+
+main {
+    margin: 0 1rem 1rem;
+}
+
+footer {
+    border-top: 1px solid black;
+    align-items: center;
 }
