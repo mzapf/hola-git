@@ -65,3 +65,16 @@ footer {
     border-top: 1px solid black;
     align-items: center;
 }
+
+@media (min-width: 45em) {
+
+    body {
+        font-size: 1.5rem;
+    }
+
+    p,
+    li {
+        width: clamp(45ch, 50%, 75ch);
+    }
+
+}
